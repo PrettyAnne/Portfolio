@@ -146,6 +146,7 @@ p {
 
 /* Home */
 #home {
+  width: 100%;
   background: url('../images/mainBackground.png') center/cover no-repeat;
   padding: 40px;
   padding-top: 100px;
@@ -543,10 +544,13 @@ p {
     width: 80px;
     height: 80px;
   }
+
+  .arrow-up {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* For below 360px screen width */
 @media screen and (max-width: 360px) {
-  .navbar_toggle-btn {
-  }
 }
