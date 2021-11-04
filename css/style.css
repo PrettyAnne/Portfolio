@@ -544,3 +544,9 @@ p {
     height: 80px;
   }
 }
+
+/* For below 360px screen width */
+@media screen and (max-width: 360px) {
+  .navbar_toggle-btn {
+  }
+}
