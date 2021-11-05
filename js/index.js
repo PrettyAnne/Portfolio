@@ -1,6 +1,6 @@
 'use-strict';
 
-// Make navbar transperent whin it is on the top
+// navbar 투명효과
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -11,13 +11,13 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// navbar toggle click open menu
+// navbar toggle 클릭하면 메뉴오픈
 const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// Handle scrolling when tapping on the navbar menu
+// 메뉴클릭 스크롤처리
 const navbarMenu = document.querySelector('.navbar_menu');
 navbarMenu.addEventListener('click', (event) => {
   const target = event.target;
@@ -30,21 +30,31 @@ navbarMenu.addEventListener('click', (event) => {
   // console.log(event.target.dataset.link);
   scrollIntoView(link);
 }); 
+// $('.navbar_menu_item').click(function(){
+//   $('html, body').animate({
+//     scrollTop: $( $(this).attr('href')).offset().top
+//   }, 500);
+// });
 
-// Handle click on 'contact me' button on home
+
+// contact me 클릭하면 contact 섹션 이동
 const homeContactBtn = document.querySelector('.home_contact');
 homeContactBtn.addEventListener('click', () => {
+  // window.scroll({
+  //   bottom: 0,
+  //   behavior: 'smooth'
+  // });
   scrollIntoView('#contact');
 });
 
-// Make home slowly fade to transperent as the window scrolls down
-const home = document.querySelector('.home_container');
-const homeHeight = home.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
-  home.style.opacity = 1 - window.scrollY / homeHeight;
-});
+// scroll 했을때 home 투명효과
+// const home = document.querySelector('.home_container');
+// const homeHeight = home.getBoundingClientRect().height;
+// document.addEventListener('scroll', () => {
+//   home.style.opacity = 1 - window.scrollY / homeHeight;
+// });
 
-// show arrow up button when scrolling down
+// arrow-up 나오는 시점
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if(window.scrollY > homeHeight /2) {
@@ -54,15 +64,24 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// arrow-up click up!!
+// arrow-up 클릭하면 위로
 arrowUp.addEventListener('click', () => {
-  scrollIntoView('#home');
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
+// arrowUp.addEventListener('click', () => {
+//   scrollIntoView('#home');
+// });
 
 
-// common scroll function
+// 공통 스크롤 함수
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+

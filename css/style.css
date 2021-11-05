@@ -175,6 +175,12 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home_contact:hover {
+  border-color: var(--color-dark-pink);
+  color: var(--color-dark-pink);
+  transition: all 200ms ease-in;
+}
+
 /* Section common */
 .section {
   padding: 50px;
