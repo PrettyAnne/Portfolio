@@ -138,7 +138,7 @@ p {
 .navbar_toggle-btn {
   position: absolute;
   top: 15px;
-  right: 18px;
+  right: 10px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
@@ -565,10 +565,6 @@ p {
 
   h3 {
     font-size: var(--font-micro);
-  }
-
-  .navbar_toggle-btn {
-    right: 10px;
   }
 
   #about p,
