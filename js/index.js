@@ -40,22 +40,18 @@ navbarMenu.addEventListener('click', (event) => {
 // contact me 클릭하면 contact 섹션 이동
 const homeContactBtn = document.querySelector('.home_contact');
 homeContactBtn.addEventListener('click', () => {
-  // window.scroll({
-  //   bottom: 0,
-  //   behavior: 'smooth'
-  // });
   scrollIntoView('#contact');
 });
 
 // scroll 했을때 home 투명효과
 // const home = document.querySelector('.home_container');
-// const homeHeight = home.getBoundingClientRect().height;
 // document.addEventListener('scroll', () => {
-//   home.style.opacity = 1 - window.scrollY / homeHeight;
-// });
-
-// arrow-up 나오는 시점
-const arrowUp = document.querySelector('.arrow-up');
+  //   home.style.opacity = 1 - window.scrollY / homeHeight;
+  // });
+  
+  // arrow-up 나오는 시점
+  const arrowUp = document.querySelector('.arrow-up');
+  const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   if(window.scrollY > homeHeight /2) {
     arrowUp.classList.add('visible');
