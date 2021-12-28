@@ -1,16 +1,5 @@
 'use-strict';
 
-// navbar 투명효과
-const navbar = document.querySelector('#navbar');
-const navbarHeight = navbar.getBoundingClientRect().height;
-document.addEventListener('scroll', () => {
-  if (window.scrollY > navbarHeight) {
-    navbar.classList.add('navbar--dark');
-  } else {
-    navbar.classList.remove('navbar--dark');
-  }
-});
-
 // navbar toggle 클릭하면 메뉴오픈
 const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
@@ -55,6 +44,14 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// 슬라이드 해서 skill section 도달했을때 animation 실행
+const skillSet = document.querySelector('.skillset');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    skillSet.classList.add('slide');
+  }
+})
+
 // arrow-up 클릭하면 위로
 arrowUp.addEventListener('click', () => {
   window.scroll({
@@ -62,10 +59,6 @@ arrowUp.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
-
-// arrowUp.addEventListener('click', () => {
-//   scrollIntoView('#home');
-// });
 
 
 // 공통 스크롤 함수
