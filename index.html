@@ -35,6 +35,7 @@
         <li class="navbar_menu_item active" data-link="#home">Home</li>
         <li class="navbar_menu_item" data-link="#about">About</li>
         <li class="navbar_menu_item" data-link="#skills">Skills</li>
+        <li class="navbar_menu_item" data-link="#project">Project</li>
         <li class="navbar_menu_item" data-link="#contact">Contact</li>
       </ul>
     </div>
@@ -50,16 +51,12 @@
     <div class="home_container">
       <img src="./images/mainMe.jpg" alt="Junghwa's photo" class="home_avatar" />
       <h1 class="home_title">Hello,<br />I'm Junghwa</h1>
-      <h2 class="home_description">Front-End Developer</h2>
-      <ul class="home_icons">
-        <li class="home_github">
-          <a href="https://github.com/PrettyAnne" target="_blank"><i class="fab fa-github"></i></a>
-        </li>
-        <li class="home_blog">
-          <a href="https://velog.io/@myanne" target="_blannk"><i class="fab fa-blogger"></i></a>
-        </li>        
-      </ul>
-      <button class="home_contact">Contact Me</button>
+      <h2 class="home_description">프론트엔드 개발자 정정화 입니다.</h2>
+      <div class="home_icons">
+          <a href="https://github.com/PrettyAnne" target="_blank" class="home_github"><i class="fab fa-github"></i></a>
+          <a href="https://velog.io/@myanne" target="_blannk" class="home_blog"><i class="fab fa-blogger"></i></a>
+          <button class="home_contact"><i class="fas fa-address-book"></i></button>
+      </div>
     </div>
   </section>
 
@@ -68,7 +65,10 @@
     <h1>About me</h1>
     <div class="about_majors">
       <div class="major">
-        <p>설명 블라블라</p>
+        <p>
+          안녕하세요🙂 정정화 입니다.
+          
+        </p>
     </div>
     <!-- about_majors -->
   </section>
@@ -77,52 +77,50 @@
   <section id="skills" class="section">
     <div class="section_container">
       <h1>Skills</h1>
-      <h2>SKill stack</h2>
+      <!-- <h2>SKill stack</h2> -->
       <div class="skillset">
-        <ul>
-          <li class="skill_html">
-            <i class="fab fa-html5"></i>
-          <p>HTML5</p>
-          </li>
+            <div class="skill skill_html">
+              <i class="fab fa-html5"></i>
+              <p>HTML5</p>
+            </div>
+  
+            <div class="skill skill_css">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS</p>
+            </div>
+  
+            <div class="skill skill_js">
+              <i class="fab fa-js-square"></i>
+              <p>JavaScript</p>
+            </div>
 
-          <li class="skill_css">
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS</p>
-          </li>
-
-          <li class="skill_js">
-            <i class="fab fa-js-square"></i>
-            <p>JavaScript</p>
-          </li>
-
-          <li class="skill_react">
+          <div class="skill skill_react">
             <i class="fab fa-react"></i>
             <p>React</p>
-          </li>
+          </div>
 
-          <li class="skill_node">
+          <div class="skill skill_node">
             <i class="fab fa-node"></i>
             <p>Node.js</p>
-          </li>
+          </div>
 
-          <li class="skill_git">
+          <div class="skill skill_git">
             <i class="fab fa-git"></i>
             <p>Git & GitHub</p>
-          </li>
-        </ul>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- Work -->
-  <section id="work" class="section">
-    <h1>My Work</h1>
-    <div class="work_categories">
+  <section id="project" class="section">
+    <h1>Project</h1>
+    <div class="project_categories">
     </div>
 
-    <div class="work_projects">
+    <div class="project_projects">
       <a href="https://github.com/PrettyAnne/React-Project" target="_blank" class="project">
-        <img src="./images/lush_project.jpg" alt="LUSH React.ver" class="project_img" />
+        <!-- <img src="./images/lush_project.jpg" alt="LUSH React.ver" class="project_img" /> -->
       </a>
     </div>
 
@@ -132,7 +130,9 @@
   <!-- Contact -->
   <section id="contact" class="section">
     <h1 class="contact_title">Contact Me</h1>
-    </div>
+    <a href="mailto:wjdghk0118@gmail.com" class="contact_email">
+      <i class="fas fa-envelope">wjdghk0118@gmail.com</i>
+    </a>
     <p class="contact_rights">2021 Junghwa - All rights reserved</p>
   </section>
 

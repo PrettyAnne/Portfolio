@@ -139,10 +139,6 @@ p {
   text-align: center;
 }
 
-.home_container {
-  position: relative;
-}
-
 .home_avatar {
   width: 30%;
   height: 30%;
@@ -155,37 +151,24 @@ p {
   color: var(--color-white);
 }
 
-.home_contact {
-  color: var(--color-white);
-  font-size: var(--font-regular);
-  font-weight: var(--weight-bold);
-  margin: 24px;
-  padding: 8px 12px;
-  border: 2px solid var(--color-white);
-  border-radius: var(--size-border-radius);
-}
-
 .home_icons {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .home_github,
-.home_blog {
-  margin-bottom: 10px;
-  font-size: var(--font-large);
-}
-
-.home_github a,
-.home_blog a {
+.home_blog,
+.home_contact{
   color: var(--color-white);
+  font-size: var(--font-large);
+  margin-right: 15px;
 }
 
-.home_contact:hover,
-.home_github a:hover,
-.home_blog a:hover {
+.home_contact i:hover,
+.home_github:hover,
+.home_blog:hover {
   border-color: var(--color-darkgray);
   color: var(--color-darkgray);
   transition: all 200ms ease-in;
@@ -239,13 +222,17 @@ p {
 }
 
 .skillset {
-  font-size: 100px;
-  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.skillset ul {
-  display: flex;
-  justify-content: space-between;
+.skill {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  font-size: 100px;
 }
 
 .skill_html {
@@ -268,12 +255,12 @@ p {
   color: #339933;
 }
 
-/* Work */
-.work_categories {
+/* project */
+.project_categories {
   margin: 40px;
 }
 
-.work_projects {
+.project_projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -302,9 +289,13 @@ p {
 }
 
 .contact_title,
-.contact_email a,
+.contact_email,
 .contact_rights {
   color: var(--color-white);
+}
+
+.contact_email {
+  font-size: var(--font-regular);
 }
 
 .contact_title {
@@ -371,10 +362,12 @@ p {
   .major {
     margin-bottom: 38px;
   }
-
-  .skillset ul{
-    flex-direction: column;
-  }
+  
+  .skill {
+    width: 150px;
+    height: 150px;
+    font-size: 80px;
+  }  
 
   .project {
     flex-grow: 1;
