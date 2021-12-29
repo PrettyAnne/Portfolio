@@ -289,7 +289,7 @@ p {
 }
 
 .contact_title,
-.contact_email,
+.contact_email i,
 .contact_rights {
   color: var(--color-white);
 }
@@ -384,7 +384,7 @@ p {
 }
 
 /* For below 360px screen width */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   h1 {
     font-size: var(--font-medium);
   }
@@ -403,12 +403,19 @@ p {
   }
 
   .home_github,
-  .home_blog {
+  .home_blog,
+  .home_contact {
     font-size: var(--font-medium);
   }
 
+  .skill {
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+  }  
+
   .contact_title {
-    margin: 0;
+    margin: 10px;
   }
 
   .contact_rights {
