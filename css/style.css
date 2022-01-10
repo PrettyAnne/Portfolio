@@ -357,6 +357,13 @@ p {
     display: block;
   }
 
+  .home_avatar {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    border: 2px solid var(--color-light-white);
+  }
+
   .about_majors {
     margin: 40px 0 0 0;
   }
@@ -397,6 +404,17 @@ p {
 
   h3 {
     font-size: var(--font-micro);
+  }
+
+  .home_avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid var(--color-light-white);
+  }
+
+  .home_description {
+    font-size: var(--font-small);
   }
 
   #about p,

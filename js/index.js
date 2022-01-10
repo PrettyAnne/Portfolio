@@ -44,6 +44,12 @@ document.addEventListener('scroll', () => {
   }
 });
 
+// window 로드시 home_container animation 실행
+const homeContainer = document.querySelector('.home_container');
+document.addEventListener("DOMContentLoaded", () => {
+  homeContainer.classList.add('slide');
+})
+
 // 슬라이드 해서 skill section 도달했을때 animation 실행
 const skillSet = document.querySelector('.skillset');
 document.addEventListener('scroll', () => {
